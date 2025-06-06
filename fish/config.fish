@@ -11,7 +11,13 @@ alias grep='grep --color=auto'
 
 # Prompt custom
 function fish_prompt
-    set_color magenta
-    echo -n "["(hostname|cut -d. -f1) "]\$ "
+    echo -n (set_color --bold brmagenta)
+    echo -n (hostname|cut -d. -f1)
+    echo -n "> "
+    set_color normal 
+    set_color brcyan
+    echo -n (string replace (echo $HOME) '~' (pwd))
+    echo -n (set_color --bold bryellow)
+    echo -n " >> "
     set_color normal
 end

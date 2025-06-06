@@ -1,0 +1,51 @@
+# Ignore semua file dan folder di root repo
+*
+
+# Whitelist folder konfigurasi penting dan semua isinya
+!hypr/
+!hypr/**/*
+!waybar/
+!waybar/**/*
+!wofi/
+!wofi/**/*
+!mako/
+!mako/**/*
+!wlogout/
+!wlogout/**/*
+!alacritty/
+!alacritty/**/*
+!fish/
+!fish/**/*
+!autostart/
+!autostart/**/*
+!.gitignore
+
+# Ignore cache dan log dalam autostart jika ada
+autostart/*.cache
+autostart/*.log
+
+# Ignore folder dan file konfigurasi lain yang tidak penting
+cachyos/
+cachyos-hello.json
+Code - OSS/
+dconf/
+evolution/
+goa-1.0/
+gtk-3.0/
+gtk-4.0/
+htop/
+micro/
+neofetch/
+pulse/
+pavucontrol.ini
+qt5ct/
+sxhkd/
+
+# Ignore auto-generated user dirs dan locale
+user-dirs.dirs
+user-dirs.locale
+
+# Ignore temporary files editor (swap, backup)
+**/*.swp
+**/*~
+
